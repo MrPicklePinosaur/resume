@@ -1,0 +1,37 @@
+{
+    "resumeName": "general",
+    "projects": [
+	{
+	    "name": "",
+	    "tagline": "",
+	    "link": "",
+	    "date": "",
+	    "description": [
+		
+	    ]
+	}
+    ],
+    "experiences": [
+	{
+	    "name": "",
+	    "role": "",
+	    "date": "",
+	    "description": [
+		
+	    ]
+	}
+    ],
+    "skills": {
+	"languages": {
+	    "programming": [],
+	    "markup": [],
+	    "other": []
+	},
+	"tools": {
+	    "frontend": [],
+	    "backend": [],
+	    "gameDev": [],
+	    "sysadmin": []
+	}
+    }
+}
