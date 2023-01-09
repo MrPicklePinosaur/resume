@@ -1,37 +1,37 @@
 {
-    "resumeName": "general",
-    "projects": [
+    resumeName: "general",
+    projects: [
 	{
-	    "name": "",
-	    "tagline": "",
-	    "link": "",
-	    "date": "",
-	    "description": [
+	    name: "",
+	    tagline: "",
+	    link: "",
+	    date: "",
+	    description: [
 		
 	    ]
-	}
-    ],
-    "experiences": [
-	{
-	    "name": "",
-	    "role": "",
-	    "date": "",
-	    "description": [
-		
-	    ]
-	}
-    ],
-    "skills": {
-	"languages": {
-	    "programming": [],
-	    "markup": [],
-	    "other": []
 	},
-	"tools": {
-	    "frontend": [],
-	    "backend": [],
-	    "gameDev": [],
-	    "sysadmin": []
-	}
-    }
+    ],
+    experiences: [
+	{
+	    name: "",
+	    role: "",
+	    date: "",
+	    description: [
+		
+	    ],
+	},
+    ],
+    skills: {
+	languages: {
+	    programming: [],
+	    markup: [],
+	    other: [],
+	},
+	tools: {
+	    frontend: [],
+	    backend: [],
+	    gameDev: [],
+	    sysadmin: [],
+	},
+    },
 }

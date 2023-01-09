@@ -1,0 +1,44 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Config",
+    "description": "config file for rirekisho",
+    "type": "object",
+    "properties": {
+        "name": {
+            "type": "string"
+        },
+        "theme": {
+            "type": "object",
+            "properties": {
+		"accentColor": { "type": "string" }
+            }
+        },
+        "links": {
+            "type": "object",
+            "properties": {
+                "website": { "type": "string" },
+                "github": { "type": "string" },
+                "devpost": { "type": "string" },
+                "itch": { "type": "string" },
+                "email": { "type": "string" },
+                "phone": { "type": "string" }
+            }
+        },
+        "education": {
+            "type": "object",
+            "properties": {
+                "school": { "type": "string" }
+            }
+        },
+	"interests": {
+	    "type": "array",
+	    "items": {
+		"type": "object",
+		"properties": {
+		    "title": { "type": "string" },
+		    "description": { "type": "string" }
+		}
+	    }
+	}
+    }
+}
