@@ -1,15 +1,15 @@
 {
     name: "Daniel Liu",
     theme: {
-	accentColor: "",
+	accentColor: "cyan",
     },
     links: {
-	website: "",
-	github: "",
-	devpost: "",
-	itch: "",
-	email: "",
-	phone: "",
+	website: "https://danieliu.xyz",
+	github: "https://github.com/MrPicklePinosaur",
+	devpost: "https://devpost.com/pinosaur",
+	itch: "https://pinosaur.itch.io/",
+	email: "d278liu@uwaterloo.ca",
+	phone: "226-759-3635",
     },
     education: {
 	school: "",

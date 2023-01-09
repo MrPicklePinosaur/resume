@@ -1,0 +1,148 @@
+%! TeX program = lualatex
+\documentclass[9pt]{article}
+
+\usepackage{titlesec,titling}
+\usepackage{multicol}
+\setlength\multicolsep{0pt}
+\setlength\columnseprule{0pt}
+\usepackage[margin=0.5in,bottom=0.1in,top=0.1in]{geometry}
+\usepackage{enumitem}
+\setlist{noitemsep,after=\vspace{-0.5em}}
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+	urlcolor=cyan
+}
+\usepackage{fontspec}
+\setmainfont{Sauce Code Pro Nerd Font}
+
+\titleformat{\section}
+{\LARGE\lowercase}{}{0em}{}[\titlerule]
+\titlespacing{\section}
+{0em}{-0.8em}{0.3em}
+
+\titleformat{\subsection}
+{\large\color{cyan}\bfseries}{}{0em}{}
+\titlespacing{\subsection}
+{0em}{0.45em}{0.25em}
+
+\titleformat{\subsubsection}[runin]
+{\bfseries\lowercase}{}{0em}{}
+\titlespacing{\subsubsection}
+{1em}{0.1em}{0.5em}
+
+\thispagestyle{empty}
+
+\renewcommand{\maketitle}{
+	\begin{center}
+		{\huge\theauthor}
+
+		\vspace{0.5em}
+
+        \href{<%= config["links"]["website"] %>}{爵 website} | \href{<%= config["links"]["github"] %>}{  github} | \href{<%= config["links"]["devpost"] %>}{ devpost} | \href{<%= config["links"]["itch"] %>}{ itch.io} | \href{mailto:<%= config["links"]["email"] %>}{﫮 <%= config["links"]["email"] %>} | \color{cyan} <%= config["links"]["phone"] %>
+	\end{center}
+}
+
+% push long words to next line
+\tolerance=1
+\emergencystretch=\maxdimen
+\hyphenpenalty=10000
+\hbadness=10000
+
+\setlength\parindent{0pt}
+\begin{document}
+
+\title{Resume}
+\author{<%= config["name"] %>}
+\maketitle
+
+\section{Experience}
+
+\subsection{Voiceflow Inc : Platform Team Software Developer \hfill  2022}
+\begin{itemize}
+    \item Developed a proof of concept \textbf{markup language} to integrate into existing platform, complete with a working compiler written in \textbf{Rust}, developer tools and documentation
+    \item Worked on extensive optimizations for the Voiceflow runtime, cutting compile times for large projects by \textbf{more than half}
+\end{itemize}
+
+\subsection{Waterloo Rocketry : Software Team \hfill  2022-present}
+\begin{itemize}
+    \item Simulated rocket flight conditions such as radiation levels using \textbf{C++} and \textbf{Geant4}
+\end{itemize}
+
+\subsection{Enzuzo Data Privacy : Full Stack Web Developer \hfill  2021}
+\begin{itemize}
+    \item Introduced \textbf{multilingual support} to flagship cookiebar application and \textbf{ReactJS} admin app, bringing in customers from new regions like Japan and Greece
+\end{itemize}
+
+\subsection{UW Computer Science Club : Term Com \hfill  2021-present}
+\begin{itemize}
+    \item Used \textbf{Ansible} to automate the creation of development VMs for both \textbf{Qemu} and \textbf{Libvirt}
+    \item Worked on \textbf{Golang} script to sync Linux package repositories with the \textbf{\href{https://mirror.csclub.uwaterloo.ca/}{CSC mirror\textsuperscript{}}}
+\end{itemize}
+
+\subsection{TOHacks : Lead Backend Developer \hfill  2021}
+\begin{itemize}
+    \item Built \textbf{Express Typescript} backend to help judges intuitively grade hackathon projects
+    \item Features \textbf{OpenAPI} based request and response validation, type generation and client SDK
+\end{itemize}
+
+\section{Projects}
+
+\subsection{\href{https://github.com/IgnitionHacks2022}{InDaBin\textsuperscript{}} : Smart Disposal Tracker \hfill  Aug 2022}
+\begin{itemize}
+    \item Built waste sorting apparatus complete with analytics platform, winning \textbf{first place}
+    \item Used \textbf{Rust} to write controller software for \textbf{Raspberry PI} that is capable of motion detection using \textbf{OpenCV}, control of GPIO pins and proximity detection using \textbf{bluetooth}
+    \item \textbf{Golang backend} that interfaces with Google \textbf{image recognition} and \textbf{text-to-speech} APIs, with accompanying mobile app written in \textbf{Flutter}
+\end{itemize}
+
+\subsection{\href{https://github.com/KaratsubaLabs/takoyaki-backend}{Takoyaki\textsuperscript{}} : Cloud Hosting Platform \hfill  Nov 2021-Jan 2022}
+\begin{itemize}
+    \item Cloud hosting platform that lets users create \textbf{virtual private servers} on demand and with features like automatic snapshots and support for various Linux distributions
+    \item \textbf{Golang} backend that interfaces with \textbf{PostgreSQL} database along with a utility CLI to run database migrations and authorize virtual machine creation requests
+    \item Makes use of \textbf{Libvirt} and \textbf{CloudInit} cloud images to quickly build a preconfigured virtual machine. Also \textbf{dockerized} and configured with \textbf{Envoy} as a reverse proxy
+\end{itemize}
+
+\subsection{\href{https://github.com/DiscourseVR}{DiscourseVR\textsuperscript{}} : Multiplayer VR Debate \hfill  Apr 2021}
+\begin{itemize}
+    \item Built a \textbf{multiplayer VR} application with networked voice and text chat using the \textbf{Unity Game Engine} with the \textbf{Mirror} networking library
+	\item Created a companion \textbf{Vue} webapp using \textbf{Nuxt} and \textbf{TailwindCSS} to playback the recorded debate, along with a \textbf{Google speech-to-text API} generated live transcript
+\end{itemize}
+
+\begin{multicols}{2}
+\section{Skills}
+\subsection{Languages}
+\subsubsection{Programming}
+C, C++, Go, Haskell, Java, Javascript/Typescript, Python, Rust, Zig
+\subsubsection{Markup}
+HTML, CSS, \LaTeX, Roff
+\subsubsection{Other}
+Unix Shell/Bash, Makefile, SQL, GLSL
+
+\subsection{Tools/Frameworks}
+\subsubsection{Frontend}
+Swift, Vue, React, React Native
+\subsubsection{Backend}
+Node, Deno, Express, PostgreSQL, OpenAPI, Firebase, MongoDB, GraphQL, Flask
+\subsubsection{Hardware}
+Arduino, ESP8266, Raspberry Pi
+\subsubsection{Sysadmin/Devops}
+Ansible, AWS, GCP, Docker, Terraform, Kubernetes, NGINX, Linux
+
+\vfill
+
+\section{Education}
+\subsection{University of Waterloo \hfill  2020-2025}
+Bachelor's of Computer Science with Digital Hardware Specialization
+
+\section{Interests}
+\subsection{Hackathons and Game Jams}
+ Participated and submitted to 25+ hackathons winning 8 times, as well as 7+ game jams
+\subsection{Open Source Contribution}
+ 3800+ total contributions on Github with 250+ pull requests created
+
+ Maintain packages and contribute to ecosystem for Bevy, the Rust game engine
+\end{multicols}
+
+
+\end{document}
+

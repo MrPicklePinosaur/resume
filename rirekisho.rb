@@ -1,5 +1,6 @@
 require "bundler/inline"
 require "json"
+require "erb"
 
 gemfile do
     source 'https://rubygems.org'
@@ -13,9 +14,9 @@ def read_and_parse(filename, schema)
     parsed = HANSON.parse(contents)
 
     puts JSON::Validator.fully_validate(schema, parsed, :strict => true)
-    puts parsed
 
     handle.close
+    return parsed
 end
 
 if ARGV.length < 1
@@ -24,7 +25,14 @@ if ARGV.length < 1
 end
 
 # read config file
-read_and_parse("config.json", "schema/config.schema.json")
+config = read_and_parse("config.json", "schema/config.schema.json")
+puts config
+
+b = binding
+b.local_variable_set(:config, config)
+template = File.open("templates/resume.tex.erb").read
+renderer = ERB.new(template)
+puts output = renderer.result(b)
 
 # for dataFile in ARGV
 #     read_and_parse(dataFile)
