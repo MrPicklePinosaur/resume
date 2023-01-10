@@ -26,14 +26,17 @@ end
 
 # read config file
 config = read_and_parse("config.json", "schema/config.schema.json")
-puts config
+# puts config
 
-b = binding
-b.local_variable_set(:config, config)
-template = File.open("templates/resume.tex.erb").read
-renderer = ERB.new(template)
-puts output = renderer.result(b)
+for dataFile in ARGV
+    resume = read_and_parse(dataFile, "schema/resume.schema.json")
 
-# for dataFile in ARGV
-#     read_and_parse(dataFile)
-# end
+    b = binding
+    b.local_variable_set(:config, config)
+    b.local_variable_set(:resume, resume)
+
+    template = File.open("templates/resume.tex.erb").read
+    renderer = ERB.new(template, 3, '-')
+    puts output = renderer.result(b)
+
+end

@@ -2,36 +2,130 @@
     resumeName: "general",
     projects: [
 	{
-	    name: "",
-	    tagline: "",
-	    link: "",
-	    date: "",
+	    name: "InDaBin",
+	    tagline: "Smart Disposal Tracker",
+	    link: "https://github.com/IgnitionHacks2022",
+	    date: "Aug 2022",
 	    description: [
-		
+		"Built waste sorting apparatus complete with analytics platform, winning \\textbf{first place}",
+		"Used \\textbf{Rust} to write controller software for \\textbf{Raspberry PI} that is capable of motion detection using \\textbf{OpenCV}, control of GPIO pins and proximity detection using \\textbf{bluetooth}",
+		"\\textbf{Golang backend} that interfaces with Google \\textbf{image recognition} and \\textbf{text-to-speech} APIs, with accompanying mobile app written in \\textbf{Flutter}",
+	    ]
+	},
+	{
+	    name: "Takoyaki",
+	    tagline: "Cloud Hosting Platform",
+	    link: "https://github.com/KaratsubaLabs/takoyaki-backend",
+	    date: "Nov 2021-Jan 2022",
+	    description: [
+		"Cloud hosting platform that lets users create \\textbf{virtual private servers} on demand and with features like automatic snapshots and support for various Linux distributions",
+		"\\textbf{Golang} backend that interfaces with \\textbf{PostgreSQL} database along with a utility CLI to run database migrations and authorize virtual machine creation requests",
+		"Makes use of \\textbf{Libvirt} and \\textbf{CloudInit} cloud images to quickly build a preconfigured virtual machine. Also \\textbf{dockerized} and configured with \\textbf{Envoy} as a reverse proxy",
+	    ]
+	},
+	{
+	    name: "DiscourseVR",
+	    tagline: "Multiplayer VR Debate",
+	    link: "https://github.com/DiscourseVR",
+	    date: "Apr 2021",
+	    description: [
+		"Built a \\textbf{multiplayer VR} application with networked voice and text chat using the \\textbf{Unity Game Engine} with the \\textbf{Mirror} networking library",
+		"Created a companion \\textbf{Vue} webapp using \\textbf{Nuxt} and \\textbf{TailwindCSS} to playback the recorded debate, along with a \\textbf{Google speech-to-text API} generated live transcript",
 	    ]
 	},
     ],
     experiences: [
 	{
-	    name: "",
-	    role: "",
-	    date: "",
+	    name: "Voiceflow Inc",
+	    role: "Platform Team Software Developer",
+	    date: "2022",
 	    description: [
-		
+		"Developed a proof of concept \\textbf{markup language} to integrate into existing platform, complete with a working compiler written in \\textbf{Rust}, developer tools and documentation",
+		"Worked on extensive optimizations for the Voiceflow runtime, cutting compile times for large projects by \\textbf{more than half}",
+	    ],
+	},
+	{
+	    name: "Waterloo Rocketry",
+	    role: "Software Team",
+	    date: "2022-present",
+	    description: [
+		"Simulated rocket flight conditions such as radiation levels using \\textbf{C++} and \\textbf{Geant4}",
+	    ],
+	},
+	{
+	    name: "Enzuzo Data Privacy",
+	    role: "Full Stack Web Developer",
+	    date: "2021",
+	    description: [
+		"Introduced \\textbf{multilingual support} to flagship cookiebar application and \\textbf{ReactJS} admin app, bringing in customers from new regions like Japan and Greece",
+	    ],
+	},
+	{
+	    name: "UW Computer Science Club",
+	    role: "Term Com",
+	    date: "2021-present",
+	    description: [
+		"Used \\textbf{Ansible} to automate the creation of development VMs for both \\textbf{Qemu} and \\textbf{Libvirt}",
+		"Worked on \\textbf{Golang} script to sync Linux package repositories with the \\textbf{\\href{https://mirror.csclub.uwaterloo.ca/}{CSC mirror\\textsuperscript{}}}",
+	    ],
+	},
+	{
+	    name: "TOHacks",
+	    role: "Lead Backend Developer",
+	    date: "2021",
+	    description: [
+		"Built \\textbf{Express Typescript} backend to help judges intuitively grade hackathon projects",
+		"Features \\textbf{OpenAPI} based request and response validation, type generation and client SDK",
 	    ],
 	},
     ],
     skills: {
-	languages: {
-	    programming: [],
-	    markup: [],
-	    other: [],
-	},
-	tools: {
-	    frontend: [],
-	    backend: [],
-	    gameDev: [],
-	    sysadmin: [],
-	},
+	languages: [
+	    {
+		"title": "Programming",
+		"entries": "C, C++, Go, Haskell, Java, Javascript/Typescript, Python, Rust, Zig"
+	    },
+	    {
+		"title": "Markup",
+		"entries": "HTML, CSS, \\LaTeX, Roff"
+	    },
+	    {
+		"title": "Other",
+		"entries": "Unix Shell/Bash, Makefile, SQL, GLSL"
+	    },
+	],
+	tools: [
+	    {
+		"title": "Frontend",
+		"entries": "Swift, Vue, React, React Native"
+	    },
+	    {
+		"title": "Backend",
+		"entries": "Node, Deno, Express, PostgreSQL, OpenAPI, Firebase, MongoDB, GraphQL, Flask"
+	    },
+	    {
+		"title": "Hardware",
+		"entries": "Arduino, ESP8266, Raspberry Pi"
+	    },
+	    {
+		"title": "Sysadmin/Devops",
+		"entries": "Ansible, AWS, GCP, Docker, Terraform, Kubernetes, NGINX, Linux"
+	    },
+	],
     },
+    interests: [
+	{
+	    "title": "Hackathons and Game Jams",
+	    "description": [
+		"Participated and submitted to 25+ hackathons winning 8 times, as well as 7+ game jams"
+	    ]
+	},
+	{
+	    "title": "Open Source Contribution",
+	    "description": [
+		"3800+ total contributions on Github with 250+ pull requests created",
+		"Maintain packages and contribute to ecosystem for Bevy, the Rust game engine"
+	    ]
+	}
+    ],
 }

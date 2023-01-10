@@ -12,9 +12,8 @@
 	phone: "226-759-3635",
     },
     education: {
-	school: "",
+	school: "University of Waterloo",
+	date: "2020-2025",
+	description: "Bachelor's of Computer Science with Digital Hardware Specialization",
     },
-    interests: [
-	
-    ],
 }

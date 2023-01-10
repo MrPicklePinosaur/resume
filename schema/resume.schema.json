@@ -1,0 +1,80 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Resume",
+    "description": "resume file for rirekisho",
+    "type": "object",
+    "properties": {
+        "resumeName": {
+            "type": "string"
+        },
+        "projects": {
+            "type": "array",
+	    "items": {
+		"type": "object",
+		"properties": {
+		    "name": { "type": "string" },
+		    "tagline": { "type": "string" },
+		    "link": { "type": "string" },
+		    "date": { "type": "string" },
+		    "description": {
+			"type": "array",
+			"items": { "type": "string" }
+		    }
+		}
+	    }
+        },
+        "experiences": {
+            "type": "array",
+	    "items": {
+		"type": "object",
+		"properties": {
+		    "name": { "type": "string" },
+		    "role": { "type": "string" },
+		    "date": { "type": "string" },
+		    "description": {
+			"type": "array",
+			"items": { "type": "string" }
+		    }
+		}
+	    }
+        },
+	"skills": {
+	    "type": "object",
+	    "properties": {
+		"languages": {
+		    "type": "array",
+		    "items": {
+			"type": "object",
+			"properties": {
+			    "title": { "type": "string" },
+			    "entries": { "type": "string" }
+			}
+		    }
+		},
+		"tools": {
+		    "type": "array",
+		    "items": {
+			"type": "object",
+			"properties": {
+			    "title": { "type": "string" },
+			    "entries": { "type": "string" }
+			}
+		    }
+		}
+	    }
+	},
+	"interests": {
+	    "type": "array",
+	    "items": {
+		"type": "object",
+		"properties": {
+		    "title": { "type": "string" },
+		    "description": {
+			"type": "array",
+			"items": { "type": "string" }
+		    }
+		}
+	    }
+	}
+    }
+}

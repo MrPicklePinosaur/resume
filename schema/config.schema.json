@@ -27,18 +27,10 @@
         "education": {
             "type": "object",
             "properties": {
-                "school": { "type": "string" }
+                "school": { "type": "string" },
+                "date": { "type": "string" },
+                "description": { "type": "string" }
             }
-        },
-	"interests": {
-	    "type": "array",
-	    "items": {
-		"type": "object",
-		"properties": {
-		    "title": { "type": "string" },
-		    "description": { "type": "string" }
-		}
-	    }
-	}
+        }
     }
 }
