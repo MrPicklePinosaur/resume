@@ -1,3 +1,8 @@
+#!/usr/bin/ruby
+
+# usage
+# rirekisho.rb <data-file>
+
 require "bundler/inline"
 require "json"
 require "erb"

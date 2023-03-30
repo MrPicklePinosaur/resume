@@ -2,6 +2,16 @@
     resumeName: "general",
     projects: [
     {
+	    name: "shrs",
+	    tagline: "POSIX compliant shell library written and configurable in Rust",
+	    link: "https://github.com/MrPicklePinosaur/shrs",
+	    date: "February 2023",
+	    description: [
+            "Developing a \\textbf{POSIX compliant shell} that is fully lexed and parsed with a formal grammar",
+            "Includes modern features like color themes, tab completion, hooks, and an experimental vi mode that are all extensible and configurable in \\textbf{Rust}",
+        ]
+    },
+    {
 	    name: "VRIoT",
 	    tagline: "Virtual Reality Manager for IoT Devices",
 	    link: "https://devpost.com/software/vriot-o84j6s",
@@ -41,6 +51,9 @@
 	    role: "Open Source Embedded Developer",
 	    date: "2023",
 	    description: [
+            "Responding to popular customer request, ported \\textbf{Golang} to \\textbf{VxWorks} - the industry leading RTOS",
+            "Involves porting system calls and writing runtime bootstrapping code in assembly",
+            "Enabled the ability for \\textbf{VxWorks} kernel and processes to be debugged remotely with Go support using \\textbf{gdbserver}"
 	    ],
 	},
 	{
@@ -131,8 +144,8 @@
 	{
 	    "title": "Open Source Contribution",
 	    "description": [
-		"3800+ total contributions on Github with 250+ pull requests created",
-		"Maintain packages and contribute to ecosystem for Bevy, the Rust game engine"
+		"4000+ total contributions on Github with 300+ pull requests created",
+		"Maintain a variety of Rust packages and contribute to ecosystem for Bevy, the Rust game engine"
 	    ]
 	}
     ],
