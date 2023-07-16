@@ -1,16 +1,26 @@
 {
-    resumeName: "general",
+    resumeName: "ai",
     projects: [
-    {
-	    name: "shrs",
-	    tagline: "POSIX compliant shell library",
-	    link: "https://github.com/MrPicklePinosaur/shrs",
-	    date: "February 2023",
+	{
+	    name: "Vina AI",
+	    tagline: "GPT Powered Visual Novel Game Generator",
+	    link: "https://devpost.com/software/vina",
+	    date: "July 2023",
 	    description: [
-            "Developing a \\textbf{POSIX compliant shell} that is fully lexed and parsed with a formal grammar",
-            "Includes modern features like syntax highlighting, tab completion, vi mode and a plugin ecosystem that are all extensible and configurable in \\textbf{Rust} and over 70 stars on github",
-        ]
-    },
+            "Using OpenAI GPTv4 and Stable Diffusion generated fully playable video game from user prompt, winning 3rd place in PrideHacks",
+            "Features dynamically generated facial expressions based on the script as well as the character's personality",
+	    ]
+	},
+	{
+	    name: "Fit Form",
+	    tagline: "Workout Posture Monitoring Companion",
+	    link: "https://devpost.com/software/fit-form",
+	    date: "Aug 2022",
+	    description: [
+            "Developed Swift Mobile App winning in PeddieHacks 2022",
+            "TODO!"
+	    ]
+	},
     {
 	    name: "VRIoT",
 	    tagline: "Virtual Reality Manager for IoT Devices",
@@ -33,17 +43,6 @@
 		"\\textbf{Golang backend} that interfaces with Google \\textbf{image recognition} and \\textbf{text-to-speech} APIs, with accompanying mobile app written in \\textbf{Flutter}",
 	    ]
 	},
-//	{
-//	    name: "Takoyaki",
-//	    tagline: "Cloud Hosting Platform",
-//	    link: "https://github.com/KaratsubaLabs/takoyaki-backend",
-//	    date: "Nov 2021-Jan 2022",
-//	    description: [
-//		"Cloud hosting platform that lets users create \\textbf{virtual private servers} on demand and with features like automatic snapshots and support for various Linux distributions",
-//		"\\textbf{Golang} backend that interfaces with \\textbf{PostgreSQL} database along with a utility CLI to run database migrations and authorize virtual machine creation requests",
-//		"Makes use of \\textbf{Libvirt} and \\textbf{CloudInit} cloud images to quickly build a preconfigured virtual machine. Also \\textbf{dockerized} and configured with \\textbf{Envoy} as a reverse proxy",
-//	    ]
-//	},
     ],
     experiences: [
 	{
@@ -53,7 +52,7 @@
 	    description: [
             "Responding to customer request, ported \\textbf{Golang} to \\textbf{VxWorks} - the industry leading RTOS",
             "Involves porting system calls and writing runtime bootstrapping code in assembly",
-            "Enabled the ability for \\textbf{VxWorks} kernel and processes to be debugged remotely with Go support using \\textbf{gdbserver}"
+            "Enabled \\textbf{VxWorks} kernel and \\textbf{Golang} process remote debugging using \\textbf{gdbserver}"
 	    ],
 	},
 	{
@@ -74,14 +73,6 @@
 	    ],
 	},
 	{
-	    name: "Enzuzo Data Privacy",
-	    role: "Full Stack Web Developer",
-	    date: "2021",
-	    description: [
-		"Introduced \\textbf{multilingual support} to flagship cookiebar application and \\textbf{ReactJS} admin app, bringing in customers from new regions like Japan and Greece",
-	    ],
-	},
-	{
 	    name: "UW Computer Science Club",
 	    role: "Term Com",
 	    date: "2021",
@@ -90,15 +81,6 @@
 		"Worked on \\textbf{Golang} script to sync Linux package repositories with the \\textbf{\\href{https://mirror.csclub.uwaterloo.ca/}{CSC mirror\\textsuperscript{}}}",
 	    ],
 	},
-//	{
-//	    name: "TOHacks",
-//	    role: "Lead Backend Developer",
-//	    date: "2021",
-//	    description: [
-//		"Built \\textbf{Express Typescript} backend to help judges intuitively grade hackathon projects",
-//		"Features \\textbf{OpenAPI} based request and response validation, type generation and client SDK",
-//	    ],
-//	},
     ],
     skills: {
 	languages: [

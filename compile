@@ -1,0 +1,7 @@
+#!/bin/sh
+
+
+./rirekisho.rb data/2023w/$1.json > out/2023w_$1.tex
+cd out
+xelatex 2023w_$1.tex
+

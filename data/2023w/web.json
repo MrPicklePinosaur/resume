@@ -2,16 +2,6 @@
     resumeName: "general",
     projects: [
     {
-	    name: "shrs",
-	    tagline: "POSIX compliant shell library",
-	    link: "https://github.com/MrPicklePinosaur/shrs",
-	    date: "February 2023",
-	    description: [
-            "Developing a \\textbf{POSIX compliant shell} that is fully lexed and parsed with a formal grammar",
-            "Includes modern features like syntax highlighting, tab completion, vi mode and a plugin ecosystem that are all extensible and configurable in \\textbf{Rust} and over 70 stars on github",
-        ]
-    },
-    {
 	    name: "VRIoT",
 	    tagline: "Virtual Reality Manager for IoT Devices",
 	    link: "https://devpost.com/software/vriot-o84j6s",
@@ -33,17 +23,16 @@
 		"\\textbf{Golang backend} that interfaces with Google \\textbf{image recognition} and \\textbf{text-to-speech} APIs, with accompanying mobile app written in \\textbf{Flutter}",
 	    ]
 	},
-//	{
-//	    name: "Takoyaki",
-//	    tagline: "Cloud Hosting Platform",
-//	    link: "https://github.com/KaratsubaLabs/takoyaki-backend",
-//	    date: "Nov 2021-Jan 2022",
-//	    description: [
-//		"Cloud hosting platform that lets users create \\textbf{virtual private servers} on demand and with features like automatic snapshots and support for various Linux distributions",
-//		"\\textbf{Golang} backend that interfaces with \\textbf{PostgreSQL} database along with a utility CLI to run database migrations and authorize virtual machine creation requests",
-//		"Makes use of \\textbf{Libvirt} and \\textbf{CloudInit} cloud images to quickly build a preconfigured virtual machine. Also \\textbf{dockerized} and configured with \\textbf{Envoy} as a reverse proxy",
-//	    ]
-//	},
+	{
+	    name: "Takoyaki",
+	    tagline: "Cloud Hosting Platform",
+	    link: "https://github.com/KaratsubaLabs/takoyaki-backend",
+	    date: "Nov 2021-Jan 2022",
+	    description: [
+		"On demand \\textbf{virtual private server} creation with automatic snapshots and \\textbf{VueJS} admin panel",
+		"\\textbf{Golang} backend that interfaces with \\textbf{PostgreSQL} database. Makes use of \\textbf{Libvirt} and \\textbf{CloudInit} cloud images to quickly build a preconfigured virtual machine.",
+	    ]
+	},
     ],
     experiences: [
 	{

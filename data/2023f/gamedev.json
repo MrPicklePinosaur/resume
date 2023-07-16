@@ -1,16 +1,6 @@
 {
-    resumeName: "general",
+    resumeName: "gamedev",
     projects: [
-    {
-	    name: "shrs",
-	    tagline: "POSIX compliant shell library",
-	    link: "https://github.com/MrPicklePinosaur/shrs",
-	    date: "February 2023",
-	    description: [
-            "Developing a \\textbf{POSIX compliant shell} that is fully lexed and parsed with a formal grammar",
-            "Includes modern features like syntax highlighting, tab completion, vi mode and a plugin ecosystem that are all extensible and configurable in \\textbf{Rust} and over 70 stars on github",
-        ]
-    },
     {
 	    name: "VRIoT",
 	    tagline: "Virtual Reality Manager for IoT Devices",
@@ -22,28 +12,25 @@
             "Features prototype IoT devices based on the \\textbf{ESP32 microcontroller} running \\textbf{micropython}, including an intruder alarm system, multiroom lighting and smart doorbell"
         ]
     },
-	{
-	    name: "InDaBin",
-	    tagline: "Smart Disposal Tracker",
-	    link: "https://devpost.com/software/indabin-smart-disposal-tracker",
-	    date: "Aug 2022",
+    {
+	    name: "",
+	    tagline: "",
+	    link: "",
+	    date: "",
 	    description: [
-		"Built waste sorting apparatus complete with analytics platform, winning \\textbf{first place}",
-		"Used \\textbf{Rust} to write controller software for \\textbf{Raspberry PI} that is capable of motion detection using \\textbf{OpenCV}, control of GPIO pins and proximity detection using \\textbf{bluetooth}",
-		"\\textbf{Golang backend} that interfaces with Google \\textbf{image recognition} and \\textbf{text-to-speech} APIs, with accompanying mobile app written in \\textbf{Flutter}",
-	    ]
-	},
-//	{
-//	    name: "Takoyaki",
-//	    tagline: "Cloud Hosting Platform",
-//	    link: "https://github.com/KaratsubaLabs/takoyaki-backend",
-//	    date: "Nov 2021-Jan 2022",
-//	    description: [
-//		"Cloud hosting platform that lets users create \\textbf{virtual private servers} on demand and with features like automatic snapshots and support for various Linux distributions",
-//		"\\textbf{Golang} backend that interfaces with \\textbf{PostgreSQL} database along with a utility CLI to run database migrations and authorize virtual machine creation requests",
-//		"Makes use of \\textbf{Libvirt} and \\textbf{CloudInit} cloud images to quickly build a preconfigured virtual machine. Also \\textbf{dockerized} and configured with \\textbf{Envoy} as a reverse proxy",
-//	    ]
-//	},
+        ]
+    },
+    {
+	    name: "DiscourseVR",
+	    tagline: "Multiplayer VR Debate",
+	    link: "",
+	    date: "Apr 2021",
+	    description: [
+            "Built a multiplayer VR application with networked voice and text chat using the Unity Game Engine along with packages like Mirror, Dissonance, and RockVR",
+            "Created a companion Vue webapp using Nuxt and TailwindCSS to playback the recorded debate, along with a Google speech-to-text API generated live transcript",
+            "Served video files through NGINX and wrote a shell script to automatically format videos with ffmpeg and upload to the main server via rsync",
+        ]
+    }
     ],
     experiences: [
 	{
@@ -53,7 +40,7 @@
 	    description: [
             "Responding to customer request, ported \\textbf{Golang} to \\textbf{VxWorks} - the industry leading RTOS",
             "Involves porting system calls and writing runtime bootstrapping code in assembly",
-            "Enabled the ability for \\textbf{VxWorks} kernel and processes to be debugged remotely with Go support using \\textbf{gdbserver}"
+            "Enabled \\textbf{VxWorks} kernel and \\textbf{Golang} process remote debugging using \\textbf{gdbserver}"
 	    ],
 	},
 	{
@@ -74,14 +61,6 @@
 	    ],
 	},
 	{
-	    name: "Enzuzo Data Privacy",
-	    role: "Full Stack Web Developer",
-	    date: "2021",
-	    description: [
-		"Introduced \\textbf{multilingual support} to flagship cookiebar application and \\textbf{ReactJS} admin app, bringing in customers from new regions like Japan and Greece",
-	    ],
-	},
-	{
 	    name: "UW Computer Science Club",
 	    role: "Term Com",
 	    date: "2021",
@@ -90,15 +69,6 @@
 		"Worked on \\textbf{Golang} script to sync Linux package repositories with the \\textbf{\\href{https://mirror.csclub.uwaterloo.ca/}{CSC mirror\\textsuperscript{}}}",
 	    ],
 	},
-//	{
-//	    name: "TOHacks",
-//	    role: "Lead Backend Developer",
-//	    date: "2021",
-//	    description: [
-//		"Built \\textbf{Express Typescript} backend to help judges intuitively grade hackathon projects",
-//		"Features \\textbf{OpenAPI} based request and response validation, type generation and client SDK",
-//	    ],
-//	},
     ],
     skills: {
 	languages: [
