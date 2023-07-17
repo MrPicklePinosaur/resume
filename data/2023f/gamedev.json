@@ -13,24 +13,35 @@
         ]
     },
     {
-	    name: "",
-	    tagline: "",
-	    link: "",
-	    date: "",
+	    name: "A9E Game Engine",
+	    tagline: "ASCII Game Engine",
+	    link: "https://github.com/MrPicklePinosaur/A9E",
+	    date: "Dec 2021",
 	    description: [
+            "Game library written in \\textbf{C++} for creating games that run on the terminal using \\textbf{Ncurses}",
+            "Features an \\textbf{entity component system} (ECS), full color support, as well as a rigid body \\textbf{physics engine} with collision detection and handling"
         ]
     },
     {
 	    name: "DiscourseVR",
 	    tagline: "Multiplayer VR Debate",
-	    link: "",
+	    link: "https://devpost.com/software/discoursevr",
 	    date: "Apr 2021",
 	    description: [
-            "Built a multiplayer VR application with networked voice and text chat using the Unity Game Engine along with packages like Mirror, Dissonance, and RockVR",
-            "Created a companion Vue webapp using Nuxt and TailwindCSS to playback the recorded debate, along with a Google speech-to-text API generated live transcript",
-            "Served video files through NGINX and wrote a shell script to automatically format videos with ffmpeg and upload to the main server via rsync",
+            "Built a \\textbf{multiplayer VR} application with networked voice and text chat using the \\textbf{Unity Game Engine} along with packages like Mirror, Dissonance, and RockVR",
+            "Created a companion \\textbf{Vue} webapp using \\textbf{Nuxt} and \\textbf{TailwindCSS} to playback the recorded debate, along with a \\textbf{Google speech-to-text API} generated live transcript"
         ]
-    }
+    },
+    {
+	    name: "Packr",
+	    tagline: "Arcade Puzzle Game",
+	    link: "https://pinosaur.itch.io/packr",
+	    date: "May 2020",
+	    description: [
+            "Solo developed hectic arcade game about packing boxes in a warehouse with 5 unique levels. Created with \\textbf{Unity} in under \\textbf{48 hours} for Quarantine Game Jam",
+            "Created all assets during jam, including sprites, music, and sound effects"
+        ]
+    },
     ],
     experiences: [
 	{
@@ -74,7 +85,7 @@
 	languages: [
 	    {
 		"title": "Programming",
-		"entries": "C, C++, Go, Haskell, Java, Javascript/Typescript, Python, Rust, Zig"
+		"entries": "C, C++, C\\#, Go, Haskell, Java, Javascript/Typescript, Python, Rust"
 	    },
 	    {
 		"title": "Markup",
@@ -94,10 +105,10 @@
 		"title": "Backend",
 		"entries": "Node, Deno, Express, PostgreSQL, OpenAPI, Firebase, MongoDB, GraphQL, Flask"
 	    },
-	    {
-		"title": "Hardware",
-		"entries": "Arduino, ESP8266/ESP32, Raspberry Pi, Oculus Quest"
-	    },
+        {
+		"title": "Game dev",
+		"entries": "Unity, Godot, OpenGL, Blender"
+        },
 	    {
 		"title": "Sysadmin/Devops",
 		"entries": "Ansible, AWS, GCP, Docker, Terraform, Kubernetes, NGINX, Linux"
