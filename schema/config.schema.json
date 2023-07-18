@@ -21,7 +21,8 @@
                 "devpost": { "type": "string" },
                 "itch": { "type": "string" },
                 "email": { "type": "string" },
-                "phone": { "type": "string" }
+                "phone": { "type": "string" },
+                "linkedin": { "type": "string" }
             }
         },
         "education": {

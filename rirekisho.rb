@@ -40,7 +40,7 @@ for dataFile in ARGV
     b.local_variable_set(:config, config)
     b.local_variable_set(:resume, resume)
 
-    template = File.open("templates/resume.tex.erb").read
+    template = File.open("templates/resume_new.tex.erb").read
     renderer = ERB.new(template, 3, '-')
     puts output = renderer.result(b)
 

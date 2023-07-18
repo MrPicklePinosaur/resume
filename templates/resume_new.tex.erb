@@ -1,0 +1,108 @@
+%! TeX program = xelatex
+\documentclass[9pt]{article}
+
+\usepackage{titlesec,titling}
+\usepackage{multicol}
+\setlength\multicolsep{0pt}
+\setlength\columnseprule{0pt}
+\usepackage[margin=0.5in,bottom=0.1in,top=0.1in]{geometry}
+\usepackage{enumitem}
+\setlist{noitemsep,after=\vspace{-0.5em}}
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+	urlcolor=<%= config["theme"]["accentColor"] %>
+}
+\usepackage{fontspec}
+\setmainfont{SauceCodePro Nerd Font}
+
+\titleformat{\section}
+{\LARGE\lowercase}{}{0em}{}[\titlerule]
+\titlespacing{\section}
+{0em}{-0.8em}{0.3em}
+
+\titleformat{\subsection}
+{\large\color{<%= config["theme"]["accentColor"] %>}\bfseries}{}{0em}{}
+\titlespacing{\subsection}
+{0em}{0.45em}{0.25em}
+
+\titleformat{\subsubsection}[runin]
+{\bfseries\lowercase}{}{0em}{}
+\titlespacing{\subsubsection}
+{1em}{0.1em}{0.5em}
+
+\thispagestyle{empty}
+
+\renewcommand{\maketitle}{
+	\begin{center}
+		{\huge\theauthor}
+
+		\vspace{0.5em}
+
+        \href{<%= config["links"]["linkedin"] %>}{󰌻  linkedin} | \href{<%= config["links"]["github"] %>}{  github} | \href{<%= config["links"]["devpost"] %>}{ devpost} | \href{<%= config["links"]["itch"] %>}{ itch.io} | \href{mailto:<%= config["links"]["email"] %>}{﫮 <%= config["links"]["email"] %>} | \color{<%= config["theme"]["accentColor"] %>} <%= config["links"]["phone"] %>
+	\end{center}
+}
+
+% push long words to next line
+\tolerance=1
+\emergencystretch=\maxdimen
+\hyphenpenalty=10000
+\hbadness=10000
+
+\setlength\parindent{0pt}
+\begin{document}
+
+\title{Resume}
+\author{<%= config["name"] %>}
+\maketitle
+
+\section{Skills}
+<% for lang_type in resume["skills"]["tools"] -%>
+\subsubsection{<%= lang_type["title"] %>}
+<%= lang_type["entries"] %>
+<% end -%>
+
+\vspace{0.5em}
+
+\section{Experience}
+
+<% for exp in resume["experiences"] -%>
+\subsection{<%= exp["name"] %>: <%= exp["role"] %>\hfill  <%= exp["date"] %>}
+\begin{itemize}
+<% for desc in exp["description"] -%>
+    \item <%= desc %>
+<% end -%>
+\end{itemize}
+
+<% end -%>
+
+\section{Projects}
+
+<% for proj in resume["projects"] -%>
+\subsection{\href{<%= proj["link"] %>}{<%= proj["name"] %>\textsuperscript{}} : <%= proj["tagline"] %>\hfill  <%= proj["date"] %>}
+\begin{itemize}
+<% for desc in proj["description"] -%>
+    \item <%= desc %>
+<% end -%>
+\end{itemize}
+
+<% end -%>
+
+\section{Education}
+\subsection{<%= config["education"]["school"] %>\hfill  <%= config["education"]["date"] %>}
+<%= config["education"]["description"] %>
+
+\vspace{0.5em}
+
+
+\section{Interests}
+<% for interest in resume["interests"] -%>
+\subsubsection{<%= interest["title"] %>}
+<% for desc in interest["description"] -%>
+<%= desc %>
+<% end -%>
+<% end -%>
+
+
+\end{document}
+

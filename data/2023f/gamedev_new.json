@@ -1,0 +1,128 @@
+{
+    resumeName: "gamedev",
+    projects: [
+    {
+	    name: "VRIoT",
+	    tagline: "Virtual Reality Manager for IoT Devices",
+	    link: "https://devpost.com/software/vriot-o84j6s",
+	    date: "Jan 2023",
+	    description: [
+            "Built VR application in \\textbf{Unity} to interface with \\textbf{IoT devices} in real time, winning \\textbf{MIT Reality Hacks 2023} in two categories",
+            "Developed \\textbf{Rust} backend with \\textbf{SurrealDB} to proxy traffic between IoT devices and VR headsets, along with SDKs to provide seamless bidirectional communication",
+            "Features prototype IoT devices based on the \\textbf{ESP32 microcontroller} running \\textbf{micropython}, including an intruder alarm system, multiroom lighting and smart doorbell"
+        ]
+    },
+    {
+	    name: "A9E Game Engine",
+	    tagline: "ASCII Game Engine",
+	    link: "https://github.com/MrPicklePinosaur/A9E",
+	    date: "Dec 2021",
+	    description: [
+            "Game library written in \\textbf{C++} for creating games that run on the terminal using \\textbf{Ncurses}",
+            "Features an \\textbf{entity component system} (ECS), full color support, as well as a rigid body \\textbf{physics engine} with collision detection and handling"
+        ]
+    },
+    {
+	    name: "DiscourseVR",
+	    tagline: "Multiplayer VR Debate",
+	    link: "https://devpost.com/software/discoursevr",
+	    date: "Apr 2021",
+	    description: [
+            "Built a \\textbf{multiplayer VR} application with networked voice and text chat using the \\textbf{Unity Game Engine} along with packages like Mirror, Dissonance, and RockVR",
+            "Created a companion \\textbf{Vue} webapp using \\textbf{Nuxt} and \\textbf{TailwindCSS} to playback the recorded debate, along with a \\textbf{Google speech-to-text API} generated live transcript"
+        ]
+    },
+    {
+	    name: "Packr",
+	    tagline: "Arcade Puzzle Game",
+	    link: "https://pinosaur.itch.io/packr",
+	    date: "May 2020",
+	    description: [
+            "Solo developed hectic arcade game about packing boxes in a warehouse with 5 unique levels. Created with \\textbf{Unity} in under \\textbf{48 hours} for Quarantine Game Jam",
+            "Created all assets during jam, including sprites, music, and sound effects"
+        ]
+    },
+    ],
+    experiences: [
+	{
+	    name: "Wind River Software",
+	    role: "Open Source Embedded Developer",
+	    date: "2023",
+	    description: [
+            "Responding to customer request, ported \\textbf{Golang} to \\textbf{VxWorks} - the industry leading RTOS",
+            "Involves porting system calls and writing runtime bootstrapping code in assembly",
+            "Enabled \\textbf{VxWorks} kernel and \\textbf{Golang} process remote debugging using \\textbf{gdbserver}"
+	    ],
+	},
+	{
+	    name: "Voiceflow Inc",
+	    role: "Platform Team Software Developer",
+	    date: "2022",
+	    description: [
+		"Developed a proof of concept \\textbf{markup language} to integrate into existing platform, complete with a working compiler written in \\textbf{Rust}, developer tools and documentation",
+		"Worked on extensive optimizations for the Voiceflow runtime, cutting compile times for large projects by \\textbf{more than half}",
+	    ],
+	},
+	{
+	    name: "Waterloo Rocketry",
+	    role: "Software Team",
+	    date: "2022",
+	    description: [
+		"Simulated rocket flight conditions such as radiation levels using \\textbf{C++} and \\textbf{Geant4}",
+	    ],
+	},
+	{
+	    name: "UW Computer Science Club",
+	    role: "Term Com",
+	    date: "2021",
+	    description: [
+		"Used \\textbf{Ansible} to automate the creation of development VMs for both \\textbf{Qemu} and \\textbf{Libvirt}",
+		"Worked on \\textbf{Golang} script to sync Linux package repositories with the \\textbf{\\href{https://mirror.csclub.uwaterloo.ca/}{CSC mirror\\textsuperscript{}}}",
+	    ],
+	},
+    ],
+    skills: {
+	tools: [
+	    {
+		"title": "Languages",
+		"entries": "C, C++, C\\#, Go, Haskell, Java, Javascript/Typescript, Python, Rust"
+	    },
+	    {
+		"title": "Technologies",
+		"entries": "Unity, Godot, OpenGL, Blender, Shader Programming, Git, Linux"
+	    },
+	    {
+		"title": "Skillsets",
+		"entries": "AR/VR, Multiplayer, Game Design, Pixel Art, Game Engine Design, ECS"
+	    },
+	],
+	languages: [
+	],
+    },
+    interests: [
+	{
+	    "title": "Hackathons",
+	    "description": [
+		"Participated and submitted to 30+ hackathons winning 10+ times"
+	    ]
+	},
+	{
+	    "title": "Game Jams",
+	    "description": [
+		"Submitted to 7+ game jams"
+	    ]
+	},
+	{
+	    "title": "Open Source",
+	    "description": [
+		"4000+ total contributions on Github with 300+ pull requests created"
+	    ]
+	},
+	{
+	    "title": "Language Acquisition",
+	    "description": [
+		"Native Mandarin speaker, fluent in Japanese and studying Korean"
+    ]
+	}
+    ],
+}
