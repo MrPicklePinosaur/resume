@@ -1,6 +1,7 @@
 {
     resumeName: "gamedev",
     projects: [
+
     {
 	    name: "VRIoT",
 	    tagline: "Virtual Reality Manager for IoT Devices",
@@ -12,6 +13,27 @@
             "Features prototype IoT devices based on the \\textbf{ESP32 microcontroller} running \\textbf{micropython}, including an intruder alarm system, multiroom lighting and smart doorbell"
         ]
     },
+	{
+	    name: "InDaBin",
+	    tagline: "Smart Disposal Tracker",
+	    link: "https://devpost.com/software/indabin-smart-disposal-tracker",
+	    date: "Aug 2022",
+	    description: [
+		"Built waste sorting apparatus complete with analytics platform, winning \\textbf{first place}",
+		"Used \\textbf{Rust} to write controller software for \\textbf{Raspberry PI} that is capable of motion detection using \\textbf{OpenCV}, control of GPIO pins and proximity detection using \\textbf{bluetooth}",
+		"\\textbf{Golang backend} that interfaces with Google \\textbf{image recognition} and \\textbf{text-to-speech} APIs, with accompanying mobile app written in \\textbf{Flutter}",
+	    ]
+	},
+    {
+	    name: "WLP4 Compiler Toolchain",
+	    tagline: "Compiler and Linker",
+	    link: "",
+	    date: "Apr 2022",
+	    description: [
+            "Created \\textbf{compiler} for WLP4, a C like language, with parser, type checking, and code generation to MIPS using \\textbf{C++}. Also built \\textbf{linker} to support code modules",
+            "Implemented \\textbf{code optimization} techniques like constant folding and register allocation"
+        ]
+    },
     {
 	    name: "A9E Game Engine",
 	    tagline: "ASCII Game Engine",
@@ -20,26 +42,6 @@
 	    description: [
             "Game library written in \\textbf{C++} for creating games that run on the terminal using \\textbf{Ncurses}",
             "Features an \\textbf{entity component system} (ECS), full color support, as well as a rigid body \\textbf{physics engine} with collision detection and handling"
-        ]
-    },
-    {
-	    name: "DiscourseVR",
-	    tagline: "Multiplayer VR Debate",
-	    link: "https://devpost.com/software/discoursevr",
-	    date: "Apr 2021",
-	    description: [
-            "Built a \\textbf{multiplayer VR} application with networked voice and text chat using the \\textbf{Unity Game Engine} along with packages like Mirror, Dissonance, and RockVR",
-            "Created a companion \\textbf{Vue} webapp using \\textbf{Nuxt} and \\textbf{TailwindCSS} to playback the recorded debate, along with a \\textbf{Google speech-to-text API} generated live transcript"
-        ]
-    },
-    {
-	    name: "Packr",
-	    tagline: "Arcade Puzzle Game",
-	    link: "https://pinosaur.itch.io/packr",
-	    date: "May 2020",
-	    description: [
-            "Solo developed hectic arcade game about packing boxes in a warehouse with 5 unique levels. Created with \\textbf{Unity} in under \\textbf{48 hours} for Quarantine Game Jam",
-            "Created all assets during jam, including sprites, music, and sound effects"
         ]
     },
     ],
@@ -85,15 +87,19 @@
 	tools: [
 	    {
 		"title": "Languages",
-		"entries": "C, C++, C\\#, Go, Haskell, Java, Javascript/Typescript, Python, Rust"
+		"entries": "Bash, C, C++, C\\#, Go, Haskell, Java, Javascript/Typescript, Python, Rust, VHDL"
 	    },
 	    {
 		"title": "Technologies",
-		"entries": "Unity, Godot, OpenGL, Blender, Shader Programming, Git, Linux"
+		"entries": "LLVM, OpenCV, OpenGL, Linux, Git, Docker, Kubernetes, FPGA, ROS, Raspberry Pi"
+	    },
+	    {
+		"title": "Web",
+		"entries": "React, Vue, Nodejs, Flask, Firebase, SQL, GraphQL, OpenAPI"
 	    },
 	    {
 		"title": "Skillsets",
-		"entries": "AR/VR, Multiplayer, Game Design, Pixel Art, Game Engine Design, ECS"
+		"entries": "Operating Systems, Compiler Construction, Networking, Concurrency, IoT, VR/AR"
 	    },
 	],
 	languages: [
