@@ -56,10 +56,17 @@
 \author{<%= config["name"] %>}
 \maketitle
 
+
+\section{Education}
+\subsection{<%= config["education"]["school"] %>\hfill  <%= config["education"]["date"] %>}
+<%= config["education"]["description"] %>
+
+\vspace{0.5em}
+
 \section{Skills}
-<% for lang_type in resume["skills"]["tools"] -%>
-\subsubsection{<%= lang_type["title"] %>}
-<%= lang_type["entries"] %>
+<% for tool_type in resume["skills"]["tools"] -%>
+\subsubsection{<%= tool_type["title"] %>}
+<%= tool_type["entries"] %>
 <% end -%>
 
 \vspace{0.5em}
@@ -87,13 +94,6 @@
 \end{itemize}
 
 <% end -%>
-
-\section{Education}
-\subsection{<%= config["education"]["school"] %>\hfill  <%= config["education"]["date"] %>}
-<%= config["education"]["description"] %>
-
-\vspace{0.5em}
-
 
 \section{Interests}
 <% for interest in resume["interests"] -%>

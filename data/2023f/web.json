@@ -1,0 +1,121 @@
+{
+    resumeName: "web",
+    projects: [
+    {
+	    name: "Gitbounties",
+	    tagline: "web3 platform for open source developers",
+	    link: "https://devpost.com/software/gitbounties",
+	    date: "Aug 2023",
+	    description: [
+            "Pioneered a \\textbf{web3} platform revitalizing open source projects by converting issues into \\textbf{NFTs}, offering monetary rewards. Submitted to ETH Toronto Blockchain Hackathon",
+            "Crafted custom \\textbf{smart contracts} implementing ERC721/ERC6551 and deployed on \\textbf{XDC Testnet}",
+            "Developed frontend dashboard using \\textbf{Next.js} and \\textbf{Tailwind CSS}, seamlessly integrating with \\textbf{MetaMask}. Also built \\textbf{Rust} oracle service to pull Github API data"
+        ]
+    },
+    {
+	    name: "VinA AI",
+	    tagline: "ChatGPT and Stable Diffusion powered game generator",
+	    link: "https://github.com/vina-ai/vina",
+	    date: "July 2023",
+	    description: [
+            "Spearheaded the development of VinA, an innovative Rust-based CLI that leverages \\textbf{Stable Diffusion} and \\textbf{ChatGPT} APIs to dynamically generate \\textbf{RenPy} visual novels",
+            "Translates prompts into comprehensive plots, immersive settings and intricately developed characters with real time facial expressions, with accompanying dialgoue lines",
+        ]
+    },
+    {
+	    name: "VRIoT",
+	    tagline: "Virtual Reality Manager for IoT Devices",
+	    link: "https://devpost.com/software/vriot-o84j6s",
+	    date: "Jan 2023",
+	    description: [
+            "Engineered a cutting-edge VR application in \\textbf{Unity} to establish real-time interaction with IoT devices, winning awards in two categories at \\textbf{MIT Reality Hacks 2023}",
+            "Prototyped IoT devices leverging the \\textbf{ESP32 microcontroller} and \\textbf{micropython}, including an intruder alarm system, multiroom lighting and smart doorbell"
+        ]
+    },
+	{
+	    name: "Takoyaki",
+	    tagline: "Cloud Hosting Platform",
+	    link: "https://github.com/KaratsubaLabs/takoyaki-backend",
+	    date: "Nov 2021-Jan 2022",
+	    description: [
+		"On demand \\textbf{virtual private server} creation with automatic snapshots and \\textbf{vuejs} admin panel",
+		"\\textbf{Golang} backend that interfaces with \\textbf{PostgreSQL} database. makes use of \\textbf{libvirt} and \\textbf{cloudinit} cloud images to quickly build a preconfigured virtual machine.",
+	    ]
+	},
+    ],
+    experiences: [
+	{
+	    name: "Wind River Software",
+	    role: "Open Source Embedded Developer",
+	    date: "2023",
+	    description: [
+            "Responding to customer request, ported \\textbf{Golang} to \\textbf{VxWorks} - the industry leading RTOS",
+            "Involves porting system calls and writing runtime bootstrapping code in assembly",
+            "Enabled \\textbf{VxWorks} kernel and \\textbf{Golang} process remote debugging using \\textbf{gdbserver}"
+	    ],
+	},
+	{
+	    name: "Voiceflow Inc",
+	    role: "Platform Team Software Developer",
+	    date: "2022",
+	    description: [
+		"Developed a proof of concept \\textbf{markup language} to integrate into existing platform, complete with a working compiler written in \\textbf{Rust}, developer tools and documentation",
+		"Worked on extensive optimizations for the Voiceflow runtime, cutting compile times for large projects by \\textbf{more than half}",
+	    ],
+	},
+	{
+	    name: "Waterloo Rocketry",
+	    role: "Software Team",
+	    date: "2022",
+	    description: [
+		"Simulated rocket flight conditions such as radiation levels using \\textbf{C++} and \\textbf{Geant4}",
+	    ],
+	},
+	{
+	    name: "UW Computer Science Club",
+	    role: "Term Com",
+	    date: "2021",
+	    description: [
+		"Used \\textbf{Ansible} to automate the creation of development VMs for both \\textbf{Qemu} and \\textbf{Libvirt}",
+		"Worked on \\textbf{Golang} script to sync Linux package repositories with the \\textbf{\\href{https://mirror.csclub.uwaterloo.ca/}{CSC mirror\\textsuperscript{}}}",
+	    ],
+	},
+    ],
+    skills: {
+        languages: [
+        ],
+        tools: [
+            {
+                "title": "Programming",
+                "entries": "C, C++, Go, Haskell, Java, Javascript/Typescript, Python, Rust, Solidity"
+            },
+            {
+                "title": "Frontend",
+                "entries": "Vue, React, React Native, Svelte, Swift, TailwindCSS"
+            },
+            {
+                "title": "Backend",
+                "entries": "Node, Deno, Express, PostgreSQL, OpenAPI, Firebase, MongoDB, GraphQL, Flask"
+            },
+            {
+                "title": "Sysadmin/Devops",
+                "entries": "Ansible, AWS, GCP, Docker, Terraform, Kubernetes, NGINX, Linux, Git"
+            },
+        ],
+    },
+    interests: [
+	{
+	    "title": "Hackathons and Game Jams",
+	    "description": [
+		"Participated and submitted to 30+ hackathons winning 10+ times. Also submitted to 7+ game jams"
+	    ]
+	},
+	{
+	    "title": "Open Source Contribution",
+	    "description": [
+		"4000+ total contributions on Github with 300+ pull requests created",
+		"Maintain a variety of Rust packages"
+	    ]
+	}
+    ],
+}
