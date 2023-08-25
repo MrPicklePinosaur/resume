@@ -18,8 +18,8 @@
 	    link: "https://github.com/vina-ai/vina",
 	    date: "July 2023",
 	    description: [
-            "Spearheaded the development of VinA, an innovative Rust-based CLI that leverages \\textbf{Stable Diffusion} and \\textbf{ChatGPT} APIs to dynamically generate \\textbf{RenPy} visual novels",
-            "Translates prompts into comprehensive plots, immersive settings and intricately developed characters with real time facial expressions, with accompanying dialgoue lines",
+            "Spearheaded the development of VinA, an innovative \\textbf{Rust} CLI that leverages \\textbf{Stable Diffusion} and \\textbf{ChatGPT} APIs to dynamically generate \\textbf{RenPy} visual novels",
+            "Translates prompts into comprehensive plots, immersive settings and intricately developed characters with real time facial expressions, with accompanying dialogue lines",
         ]
     },
     {
@@ -38,8 +38,8 @@
 	    link: "https://github.com/KaratsubaLabs/takoyaki-backend",
 	    date: "Nov 2021-Jan 2022",
 	    description: [
-		"On demand \\textbf{virtual private server} creation with automatic snapshots and \\textbf{vuejs} admin panel",
-		"\\textbf{Golang} backend that interfaces with \\textbf{PostgreSQL} database. makes use of \\textbf{libvirt} and \\textbf{cloudinit} cloud images to quickly build a preconfigured virtual machine.",
+		"On demand \\textbf{virtual private server} creation with automatic snapshots and \\textbf{Vue} admin panel",
+		"\\textbf{Golang} backend that interfaces with \\textbf{PostgreSQL} database. Makes use of \\textbf{libvirt} and \\textbf{cloudinit} cloud images to quickly build a preconfigured virtual machine.",
 	    ]
 	},
     ],
