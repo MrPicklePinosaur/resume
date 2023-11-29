@@ -1,6 +1,6 @@
 #!/bin/sh
 
-./rirekisho.rb data/2023f/$1.json > out/2023f_$1.tex
+./rirekisho.rb data/2024w/$1.json > out/2024w_$1.tex
 cd out
-xelatex 2023f_$1.tex
+xelatex 2024w_$1.tex
 
