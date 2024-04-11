@@ -1,6 +1,10 @@
 #!/bin/sh
 
-./rirekisho.rb data/2024w/$1.json > out/2024w_$1.tex
+prefix=2024s
+
+mkdir -p out
+
+./rirekisho.rb data/${prefix}/${1}.json > out/${prefix}_${1}.tex
 cd out
-xelatex 2024w_$1.tex
+xelatex ${prefix}_${1}.tex
 
