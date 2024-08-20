@@ -1,6 +1,6 @@
 #!/bin/sh
 
-prefix=2024s
+prefix=2024f
 
 mkdir -p out
 
