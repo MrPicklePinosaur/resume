@@ -1,5 +1,7 @@
 #!/bin/sh
 
+set -e
+
 prefix=2024f
 
 mkdir -p out

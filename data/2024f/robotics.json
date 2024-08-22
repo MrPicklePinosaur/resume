@@ -3,13 +3,13 @@
     projects: [
     {
 	    name: "Hexasaur",
-	    tagline: "Walking autonomous hexapod robot",
+	    tagline: "Autonomous walking hexapod robot",
 	    link: "",
 	    date: "Aug 2024",
 	    description: [
-            "Designed and 3D printed a walking hexapod robot using \\textbf{Fusion 360}",
-            "ROS on \\textbf{Raspbeberry Pi} to support teleoperation, motor control and stream camera feed",
-            "Leveraged \\textbf{FreeRTOS} on the \\textbf{ESP32} companion microprocessor to drive 18 independent servo motors"
+            "Designed and 3D printed a walking hexapod robot using \\textbf{Fusion 360} and Cura Slicer",
+            "Deployed \\textbf{ROS} on \\textbf{Raspbeberry Pi} for teleoperation, motor control and stream camera feed",
+            "Leveraged \\textbf{FreeRTOS} and \\textbf{ESP32} MCU to drive 18 servo motors using \\textbf{inverse-kinematics}"
         ]
     },
     {
@@ -18,9 +18,8 @@
 	    link: "https://github.com/AndyKart64/andynet",
 	    date: "July 2024",
 	    description: [
-            "Developed and trained \\textbf{DQN} agent from scratch using \\textbf{PyTorch} and OpenAI Gym to play N64 Mario Kart",
-            "Lunar Lander with DQN and prioritized experience replay",
-            "MuJoCo Ant with PPO and torchrl"
+            "Developed and trained \\textbf{DQN} agent from scratch using \\textbf{PyTorch} to play N64 Mario Kart",
+            "Trained agents for Lunar Lander environment using \\textbf{DQN+PER} and \\textbf{DDQN} as well as MuJoCo Ant using \\textbf{PPO}; evaluated and tuned model to generate a detailed report",
         ]
     },
     {
@@ -52,9 +51,9 @@
 	    role: "CEO and Co-founder | Retro handheld gaming startup",
 	    date: "2024",
 	    description: [
-            "Formed company with the goal of building a retro handheld game console for the PICO-8 game platform",
-            "Built 10+ 3D printed prototypes, 3 custom PCB revisions and engineered working game emulator and launcher",
-            "Spoke with 60+ potential customers, gained 100+ waitlists, 200+ follows on twitter, and raised $5,000 in grants"
+            "Formed company building a retro handheld game console for the PICO-8 game platform",
+            "Built \\textbf{10+} 3D printed prototypes, \\textbf{3} custom PCB revisions and engineered game emulator",
+            "Spoke with \\textbf{60+} customers, gained \\textbf{100+} waitlists, and raised \\$\\textbf{5,000} in grants"
 	    ],
 	},
 	{
@@ -85,15 +84,6 @@
 		"Extensively optimized the Voiceflow runtime, cutting compile times by \\textbf{more than half}",
 	    ],
 	},
-	{
-	    name: "UW Computer Science Club",
-	    role: "Term Com",
-	    date: "2021",
-	    description: [
-		"Used \\textbf{Ansible} to automate the creation of development VMs for both \\textbf{Qemu} and \\textbf{Libvirt}",
-		"Worked on \\textbf{Golang} script to sync Linux package repositories with the \\textbf{\\href{https://mirror.csclub.uwaterloo.ca/}{CSC mirror\\textsuperscript{}}}",
-	    ],
-	},
     ],
     skills: {
 	tools: [
@@ -103,19 +93,15 @@
 	    },
 	    {
 		"title": "Technologies",
-		"entries": "LLVM, OpenCV, OpenGL, Linux, Git, Docker, Kubernetes, FPGA, ROS, Raspberry Pi"
+		"entries": "Raspberry Pi, STM32, ESP32, FPGA, Linux, Git, Docker, Kubernetes, Buildroot"
 	    },
-        //{
-		//"title": "Tools",
-		//"entries": "Fusion 360", "Autodesk Eagle", "KiCAD"
-	    //},
 	    {
-		"title": "Web",
-		"entries": "React, Vue, Nodejs, Flask, Firebase, SQL, GraphQL, OpenAPI"
+		"title": "Tools",
+		"entries": "Fusion 360, Eagle, KiCAD, ROS, MuJoCo, PyTorch, OpenCV, OpenGL, Jupyter Notebook"
 	    },
 	    {
 		"title": "Skillsets",
-		"entries": "Operating Systems, Compiler Construction, Networking, Concurrency, IoT, VR/AR"
+		"entries": "Operating Systems, Control Systems, Networking, Concurrency, IoT, VR/AR"
 	    },
 	],
 	languages: [
@@ -126,12 +112,6 @@
 	    "title": "Hackathons",
 	    "description": [
 		"Participated and submitted to 30+ hackathons winning 10+ times"
-	    ]
-	},
-	{
-	    "title": "Game Jams",
-	    "description": [
-		"Submitted to 7+ game jams"
 	    ]
 	},
 	{
